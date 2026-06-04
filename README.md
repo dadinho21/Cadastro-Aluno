@@ -64,7 +64,7 @@ $banco = "cadastro_aluno";
 - `logout.php` - Sair do sistema
 - `conexao.php` - Conexão com BD
 - `banco.sql` - Script do banco
-- `css/stryle.css` - Estilos
+- `css/style.css` - Estilos
 
 ## Como Usar
 
