@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS cadastro_aluno;
+USE cadastro_aluno;
+
+CREATE TABLE IF NOT EXISTS alunos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    ra VARCHAR(20) NOT NULL UNIQUE,
+    idade INT NOT NULL,
+    curso VARCHAR(50) NOT NULL
+);
