@@ -1,7 +1,6 @@
 <?php
 include 'conexao.php';
 
-// Verificar login
 if (!isset($_SESSION['logado'])) {
     header("Location: login.php");
     exit;
@@ -17,7 +16,6 @@ if (!$aluno) {
     exit;
 }
 
-// Processar atualização
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
     $ra = $_POST['ra'];

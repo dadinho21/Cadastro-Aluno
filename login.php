@@ -5,7 +5,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuario = $_POST['usuario'] ?? '';
     $senha = $_POST['senha'] ?? '';
 
-    // Credenciais simples (para exercício)
     if ($usuario === 'admin' && $senha === '123456') {
         $_SESSION['logado'] = true;
         header("Location: index.php");
@@ -15,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Se já está logado, redireciona
+
 if (isset($_SESSION['logado'])) {
     header("Location: index.php");
     exit;

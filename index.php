@@ -1,7 +1,6 @@
 <?php
 include 'conexao.php';
 
-// Verificar login
 if (!isset($_SESSION['logado'])) {
     header("Location: login.php");
     exit;
